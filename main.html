@@ -1,0 +1,679 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="index.html" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav class="header__links">
+                    <a href="#">главная</a>
+                    <a href="#">о компании</a>
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
+                        <ul class="header-down__menu dropdown-menu">
+                            <li class="header-down__link">
+                                <a href="#">русские бани</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">соляные сауны</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">бассейны</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">чаны</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">купели</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">сервис и обслуживание</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
+                        <ul class="header-down__menu dropdown-menu">
+                            <li class="header-down__link">
+                                <a href="#">строительство банных комплексов</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">строительство соляных комплексов</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">бассейны</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">портфолио</a>
+                    <a href="#">блог</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="btnArrow" viewBox="0 0 14 14">
+        <g clip-path="url(#clip0_6_3)">
+            <rect x="6" width="9" height="1"/>
+            <rect x="13" width="1" height="9"/>
+            <path d="M13 1L0 14"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content index">
+                <section class="intro">
+                    <div class="intro__bg">
+                        <img src="img/index/intro/intro.png" alt="intro">
+                    </div>
+                    <div class="container">
+                        <div class="intro__row text-white">
+                            <h1>правильные бани</h1>
+                            <h2>
+                                Создаем лучшие банные комплексы
+                                <br>
+                                для вашего истинного комфорта
+                            </h2>
+                            <div class="intro__btns btns">
+                                <button class="btn btn__bordered white">оставить заявку</button>
+                                <a href="#" class="btn btn__underlined white">
+                                    рассчитать стоимость
+                                    <img src="img/svgicons/quiz-arrow.svg" alt="quiz-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about section">
+                    <div class="container">
+                        <header class="block-header flex">
+                            <h2>о компании</h2>
+                            <p>
+                                Компания «Правильные бани» успешно работает 
+                                    в сфере строительства c 2004 года и за это время успела прочно зарекомендовать себя 
+                                    как надежный и стабильный партнер
+                            </p>
+                            <p>
+                                Основная деятельность компании – 
+                                        строительство соляных комнат, бань, хамам, домашних SPA и Wellness центров 
+                                        из премиальных материалов
+                            </p>
+                        </header>
+                        <main class="about__content block-main">
+                            <aside class="about__text block-main__aside">
+                                <p>Сегодня каждый человек может организовать сауну или турецкую баню у себя дома</p>
+                                <a href="#" class="btn btn__bordered green">оставить заявку</a>
+                            </aside>
+                            <div class="about__img block-main__big">
+                                <img src="img/index/about/content.png" alt="about-img">
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="why section">
+                    <div class="container">
+                        <header class="block-header flex">
+                            <h2>почему именно мы?</h2>
+                            <p>
+                                Создавая бани и сауны уже на протяжении многих лет, мы гордимся тем, что каждый клиент становится частью нашей успешной истории. Присоединяйтесь к нам и доверьте свои мечты надежным рукам профессионалов
+                            </p>
+                        </header>
+                        <main class="why__content block-main">
+                            <aside class="block-main__aside"></aside>
+                            <div class="why__text block-main__big">
+                                <article class="why__advantage advantage-card">
+                                    <header class="advantage-card__header">
+                                        <p>
+                                            <span>до</span>
+                                            50
+                                        </p>
+                                    </header>
+                                    <main class="advantage-card__main">
+                                        <h3>
+                                            специалистов 
+                                            работают над проектом
+                                        </h3>
+                                    </main>
+                                </article>
+                                <article class="why__advantage advantage-card">
+                                    <header class="advantage-card__header">
+                                        <p>
+                                            160+
+                                        </p>
+                                    </header>
+                                    <main class="advantage-card__main">
+                                        <h3>
+                                            полностью готовых проектов
+                                        </h3>
+                                    </main>
+                                </article>
+                                <article class="why__advantage advantage-card">
+                                    <header class="advantage-card__header">
+                                        <p>
+                                            12
+                                        </p>
+                                    </header>
+                                    <main class="advantage-card__main">
+                                        <h3>
+                                            месяцев бесплатного 
+                                            сервисного обслуживания
+                                        </h3>
+                                    </main>
+                                </article>
+                                <article class="why__advantage advantage-card">
+                                    <header class="advantage-card__header">
+                                        <p>
+                                            20
+                                        </p>
+                                    </header>
+                                    <main class="advantage-card__main">
+                                        <h3>
+                                            лет опыта в строительстве 
+                                            банных комплексов
+                                        </h3>
+                                    </main>
+                                </article>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <article class="spa article">
+                    <div class="container">
+                        <header class="block-header flex reverse between">
+                            <h2>Все что угодно</h2>
+                            <p>
+                                и все только
+                                <br>
+                                для вашего комфорта
+                            </p>
+                        </header>
+                        <main class="spa__row">
+                            <article class="spa__spa text-white">
+                                <h3>домашние spa</h3>
+                                <a href="#" class="btn btn__bordered white">смотреть каталог</a>
+                                <img src="img/index/spa/1.png" alt="spa-image">
+                            </article>
+                            <article class="spa__spa text-white">
+                                <h3>коммерческие spa</h3>
+                                <a href="#" class="btn btn__bordered white">смотреть каталог</a>
+                                <img src="img/index/spa/2.png" alt="spa-image">
+                            </article>
+                        </main>
+                    </div>
+                </article>
+                <article class="our-works article">
+                    <div class="container">
+                        <header class="block-header flex between">
+                            <h2>наши работы</h2>
+                            <p>
+                                В данном разделе представлены работы, реализованные нашей компанией
+                            </p>
+                        </header>
+                    </div>
+                    <div class="our-works__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="our-works__img">
+                                    <img src="img/photogallery/1.png" alt="photogallery-img">
+                                </div>
+                                <h3>spa комплекс с баней и хамамом</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our-works__img">
+                                    <img src="img/photogallery/2.png" alt="photogallery-img">
+                                </div>
+                                <h3>spa комплекс с баней и хамамом</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our-works__img">
+                                    <img src="img/photogallery/3.png" alt="photogallery-img">
+                                </div>
+                                <h3>spa комплекс с баней и хамамом</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our-works__img">
+                                    <img src="img/photogallery/1.png" alt="photogallery-img">
+                                </div>
+                                <h3>spa комплекс с баней и хамамом</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our-works__img">
+                                    <img src="img/photogallery/2.png" alt="photogallery-img">
+                                </div>
+                                <h3>spa комплекс с баней и хамамом</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our-works__img">
+                                    <img src="img/photogallery/3.png" alt="photogallery-img">
+                                </div>
+                                <h3>spa комплекс с баней и хамамом</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev our-works__prev"></div>
+                        <div class="swiper-button-next our-works__next"></div>
+                    </div>
+                </article>
+                <article class="articles article">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>статьи</h2>
+                        </header>
+                        <main class="articles__row">
+                            <article class="articles__article">
+                                <div class="articles__img">
+                                    <img src="img/articles/1.png" alt="articles-img">
+                                </div>
+                                <h3>
+                                    Посещение турецкой 
+                                    бани хамам
+                                </h3>
+                                <p>Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow">
+                                    оставить заявку
+                                    <svg>
+                                        <use xlink:href="#btnArrow"></use>
+                                    </svg>
+                                </a>
+                            </article>
+                            <article class="articles__article">
+                                <div class="articles__img">
+                                    <img src="img/articles/2.png" alt="articles-img">
+                                </div>
+                                <h3>
+                                    Посещение турецкой 
+                                    бани хамам
+                                </h3>
+                                <p>Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow">
+                                    оставить заявку
+                                    <svg>
+                                        <use xlink:href="#btnArrow"></use>
+                                    </svg>
+                                </a>
+                            </article>
+                            <article class="articles__article">
+                                <div class="articles__img">
+                                    <img src="img/articles/1.png" alt="articles-img">
+                                </div>
+                                <h3>
+                                    Посещение турецкой 
+                                    бани хамам
+                                </h3>
+                                <p>Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow">
+                                    оставить заявку
+                                    <svg>
+                                        <use xlink:href="#btnArrow"></use>
+                                    </svg>
+                                </a>
+                            </article>
+                            <article class="articles__article">
+                                <div class="articles__img">
+                                    <img src="img/articles/3.png" alt="articles-img">
+                                </div>
+                                <h3>
+                                    Посещение турецкой 
+                                    бани хамам
+                                </h3>
+                                <p>Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow">
+                                    оставить заявку
+                                    <svg>
+                                        <use xlink:href="#btnArrow"></use>
+                                    </svg>
+                                </a>
+                            </article>
+                        </main>
+                    </div>
+                </article>
+                <article class="special article">
+                    <div class="container">
+                        <main class="special__content block-main block-main__second">
+                            <aside class="block-main__aside">
+                                <header class="block-header">
+                                    <h2>Специальные предложения</h2>
+                                    <p>
+                                        Успейте приобрести товары и услуги на выгодных условиях
+                                    </p>
+                                </header>
+                                <article class="special__item special-item">
+                                    <div class="special-item__img">
+                                        <img src="img/special/1.png" alt="special-item-img">
+                                    </div>
+                                    <div class="special-item__text">
+                                        <p>
+                                            Светильник 
+                                            из гималайской соли 
+                                            в подарок
+                                        </p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            узнать больше
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="special__item special-item">
+                                    <div class="special-item__img">
+                                        <img src="img/special/2.png" alt="special-item-img">
+                                    </div>
+                                    <div class="special-item__text">
+                                        <p>
+                                            Эксклюзивный 
+                                            дизайн 3D 
+                                            в подарок
+                                        </p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            узнать больше
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                            </aside>
+                            <div class="block-main__big">
+                                <img src="img/special/content.png" alt="special-img">
+                            </div>
+                        </main>
+                    </div>
+                </article>
+                <article class="form article">
+                    <div class="container">
+                        <main class="form__row block-main block-main__second">
+                            <header class="block-header block-main__aside">
+                                <h2>рассчитать стоимость проекта</h2>
+                                <p>
+                                    Обсудите проект со специалистом.
+                                    <br>
+                                    Заполните форму, и наш менеджер
+                                    <br>
+                                    свяжется с вами в течение 10 минут
+                                </p>
+                            </header>
+                            <form action="#" class="form__form block-main__big">
+                                <input type="text" name="name" placeholder="ваше имя">
+                                <input type="tel" name="phone" placeholder="ваш телефон">
+                                <input type="email" name="email" placeholder="ваш email">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <p>
+                                        Я согласен на
+                                        <a href="#">обработку персональных данных</a>
+                                    </p>
+                                </label>
+                                <button class="btn" type="submit">отправить</button>
+                            </form>
+                        </main>
+                    </div>
+                </article>
+                <article class="reviews article">
+                    <div class="container">
+                        <header class="block-header flex between">
+                            <h2>
+                                отзывы 
+                                наших клиентов
+                            </h2>
+                        </header>
+                    </div>
+                    <div class="reviews__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <header class="reviews__header">
+                                    <p class="reviews__author">Акишев Руслан</p>
+                                    <p class="reviews__town">Казань, Россия</p>
+                                </header>
+                                <blockquote>
+                                    <h3>Все сделали быстро и качественно</h3>
+                                    <p>Перед мастерами компании была поставлена задача закончить внутреннюю отделку бани: обшить вагонкой стены, потолок, откосы на окнах, установить печку и собрать полки в парной. Все было выполнено качественно и в срок. Цена меня удовлетворила. С менеджером по строительству легко нашли общий язык, он прислушивался ко всем моим пожеланиям. Рекомендую всем обращаться в «Правильные бани»!</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <header class="reviews__header">
+                                    <p class="reviews__author">Акишев Руслан</p>
+                                    <p class="reviews__town">Казань, Россия</p>
+                                </header>
+                                <blockquote>
+                                    <h3>Все сделали быстро и качественно</h3>
+                                    <p>Перед мастерами компании была поставлена задача закончить внутреннюю отделку бани: обшить вагонкой стены, потолок, откосы на окнах, установить печку и собрать полки в парной. Все было выполнено качественно и в срок. Цена меня удовлетворила. С менеджером по строительству легко нашли общий язык, он прислушивался ко всем моим пожеланиям. Рекомендую всем обращаться в «Правильные бани»!</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <header class="reviews__header">
+                                    <p class="reviews__author">Акишев Руслан</p>
+                                    <p class="reviews__town">Казань, Россия</p>
+                                </header>
+                                <blockquote>
+                                    <h3>Все сделали быстро и качественно</h3>
+                                    <p>Перед мастерами компании была поставлена задача закончить внутреннюю отделку бани: обшить вагонкой стены, потолок, откосы на окнах, установить печку и собрать полки в парной. Все было выполнено качественно и в срок. Цена меня удовлетворила. С менеджером по строительству легко нашли общий язык, он прислушивался ко всем моим пожеланиям. Рекомендую всем обращаться в «Правильные бани»!</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <header class="reviews__header">
+                                    <p class="reviews__author">Акишев Руслан</p>
+                                    <p class="reviews__town">Казань, Россия</p>
+                                </header>
+                                <blockquote>
+                                    <h3>Все сделали быстро и качественно</h3>
+                                    <p>Перед мастерами компании была поставлена задача закончить внутреннюю отделку бани: обшить вагонкой стены, потолок, откосы на окнах, установить печку и собрать полки в парной. Все было выполнено качественно и в срок. Цена меня удовлетворила. С менеджером по строительству легко нашли общий язык, он прислушивался ко всем моим пожеланиям. Рекомендую всем обращаться в «Правильные бани»!</p>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <header class="reviews__header">
+                                    <p class="reviews__author">Акишев Руслан</p>
+                                    <p class="reviews__town">Казань, Россия</p>
+                                </header>
+                                <blockquote>
+                                    <h3>Все сделали быстро и качественно</h3>
+                                    <p>Перед мастерами компании была поставлена задача закончить внутреннюю отделку бани: обшить вагонкой стены, потолок, откосы на окнах, установить печку и собрать полки в парной. Все было выполнено качественно и в срок. Цена меня удовлетворила. С менеджером по строительству легко нашли общий язык, он прислушивался ко всем моим пожеланиям. Рекомендую всем обращаться в «Правильные бани»!</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev reviews__prev"></div>
+                        <div class="swiper-button-next reviews__next"></div>
+                    </div>
+                </article>
+                <article class="partners article">
+                    <div class="container">
+                        <header class="block-header flex between">
+                            <h2>Наши партнеры</h2>
+                            <p>
+                                Мы сотрудничаем с международными компаниями, которые являются одними из крупнейших производителей оборудования и материалов для саун и хамамов в мире. Компаниями, основанными на лучших принципах семейного бизнеса и сумевшие сохранить эти ценности, несмотря на глобальный масштаб своей деятельности
+                            </p>
+                        </header>
+                        <main class="partners__row">
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/1.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/2.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/3.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/4.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/5.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/6.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/7.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                            <a href="#" class="partners__item">
+                                <div class="partners__img">
+                                    <img src="img/partners/8.png" alt="partners-img">
+                                </div>
+                                <p>Harvia</p>
+                            </a>
+                        </main>
+                    </div>
+                </article>
+                <article class="form article">
+                    <div class="container">
+                        <main class="form__row block-main block-main__second">
+                            <header class="block-header block-main__aside">
+                                <h2>
+                                    Еще 
+                                    остались вопросы?
+                                </h2>
+                                <p>
+                                    Если у вас остались вопросы, заполните форму и наши специалисты в ближайшее время свяжутся с вами
+                                </p>
+                            </header>
+                            <form action="#" class="form__form block-main__big">
+                                <input type="text" name="name" placeholder="ваше имя">
+                                <input type="tel" name="phone" placeholder="ваш телефон">
+                                <input type="email" name="email" placeholder="ваш email">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <p>
+                                        Я согласен на
+                                        <a href="#">обработку персональных данных</a>
+                                    </p>
+                                </label>
+                                <button class="btn" type="submit">отправить</button>
+                            </form>
+                        </main>
+                    </div>
+                </article>
+                <article class="map">
+                    <img src="img/map.png" alt="map">
+                </article>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <header class="footer__header">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/svgicons/logo.svg" alt="logo">
+                </a>
+            </header>
+            <main class="footer__links">
+                <nav class="footer__nav">
+                    <p class="footer__title">правильные бани</p>
+                    <a href="#">главная</a>
+                    <a href="#">о компании</a>
+                    <a href="#">портфолио</a>
+                    <a href="#">блог</a>
+                    <a href="#">контакты</a>
+                </nav>
+                <nav class="footer__nav">
+                    <p class="footer__title">домашние spa</p>
+                    <a href="#">русские бани</a>
+                    <a href="#">финские сауны</a>
+                    <a href="#">соляные сауны</a>
+                    <a href="#">бассейны</a>
+                    <a href="#">чаны</a>
+                    <a href="#">купели</a>
+                    <a href="#">сервис и обслуживание</a>
+                </nav>
+                <nav class="footer__nav ">
+                    <p class="footer__title">коммерческие spa</p>
+                    <a href="#">строительство банных комплексов</a>
+                    <a href="#">строительство соляных комплексов</a>
+                    <a href="#">бассейны</a>
+                </nav>
+                <nav class="footer__nav">
+                    <p class="footer__title">контакты</p>
+                    <p>
+                        г. Казань, ул. Баки Урманче д.6
+                    </p>
+                    <a href="tel:+7 (987) 226-58-08">+7 (987) 226-58-08</a>
+                    <a href="mailto:prbani@mail.ru">prbani@mail.ru</a>
+                    <div class="social">
+                        <a href="#">
+                            <img src="img/svgicons/youtube.svg" alt="youtube">
+                        </a>
+                        <a href="#">
+                            <img src="img/svgicons/insta.svg" alt="insta">
+                        </a>
+                    </div>
+                </nav>
+            </main>
+            <footer class="footer__copy">
+                <p>2024 ©  Правильные бани</p>
+                <p>Копирование материалов с сайта запрещено. Нарушение авторских прав влечет за собой ответственность, в соответствии со ст. 1301 ГК РФ.</p>
+            </footer>
+        </div>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-callback">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Обратный звонок</h2>
+                <form action="#">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+                    <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        placeholder="Ваш телефон"
+                    >
+                    <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
