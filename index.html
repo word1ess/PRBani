@@ -7,9 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Главная</title>
 </head>
@@ -19,7 +23,7 @@
             <header class="header">
     <div class="container">
         <div class="header__row">
-            <a href="index.html" class="header__logo">
+            <a href="index.html" class="header__logo fadeIn wow" data-wow-delay="1s">
                 <img src="img/svgicons/logo.svg" alt="logo">
             </a>
             <div class="header__burger">
@@ -27,11 +31,11 @@
             </div>
             <div class="header__menu">
                 <nav class="header__links">
-                    <a href="#">главная</a>
-                    <a href="#">о компании</a>
-                    <div class="dropdown-container">
+                    <a href="#" class="wow fadeInLeft">главная</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="100ms">о компании</a>
+                    <div class="dropdown-container wow fadeInLeft" data-wow-delay="200ms">
                         <div class="arrow"></div>
-                        <a href="#" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
+                        <a href="#" class="header__link dropdown-toggle">домашние spa</a>
                         <ul class="header-down__menu dropdown-menu">
                             <li class="header-down__link">
                                 <a href="#">русские бани</a>
@@ -53,7 +57,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="dropdown-container">
+                    <div class="dropdown-container wow fadeInLeft" data-wow-delay="300ms">
                         <div class="arrow"></div>
                         <a href="#" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
                         <ul class="header-down__menu dropdown-menu">
@@ -68,9 +72,9 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#">портфолио</a>
-                    <a href="#">блог</a>
-                    <a href="#">Контакты</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="400ms">портфолио</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="500ms">блог</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="600ms">Контакты</a>
                 </nav>
             </div>
         </div>
@@ -96,6 +100,21 @@
                     </li>
                     <li>
                         <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="catalog.html">Каталог спа</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="article.html">Страница статьи</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="item.html">Страница сауны</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="photogallery.html">Фотогалерея</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="blog.html">Блог</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
             </main>
@@ -161,7 +180,7 @@
         <div class="dialogbox__window">
             <div class="dialogbox__close"></div>
             <div class="dialogbox__form">
-                <h2>Обратный звонок</h2>
+                <h2>Отправить заявку</h2>
                 <form action="#">
                     <input
                         class="input"
@@ -175,7 +194,160 @@
                         name="phone"
                         placeholder="Ваш телефон"
                     >
+                    <input
+                        class="input"
+                        type="email"
+                        name="email"
+                        placeholder="Ваш email"
+                    >
+                    <textarea name="comment" placeholder="ваше сообщение"></textarea>
                     <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialogbox dialogbox-price">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Рассчитать стоимость</h2>
+                <form action="#">
+                    <div class="dialogbox__user-info">
+                        <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            placeholder="Ваше имя"
+                        >
+                        <input
+                            class="input"
+                            type="tel"
+                            name="phone"
+                            placeholder="Ваш телефон"
+                        >
+                    </div>
+                    <p class="dialogbox__question">Для какого вида использования планируете строительство банного комплекса?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="first">
+                            <p>
+                                Индивидуальное использование
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="first">
+                            <p>
+                                Коммерческое использование
+                            </p>
+                        </label>
+                    </div>
+                    <p class="dialogbox__question">У Вас уже имеется готовое помещение под отделку?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="second">
+                            <p>
+                                да
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="second">
+                            <p>
+                                нет
+                            </p>
+                        </label>
+                    </div>
+                    <p class="dialogbox__question">Какую площадь Вы планируете выделить для комплекса?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                До 50м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                До 100м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                До 200м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                Свыше 200м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                    </div>
+                    <p class="dialogbox__question">Какую площадь Вы планируете выделить для комплекса?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="fourth">
+                            <p>
+                                Русская баня
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="fourth">
+                            <p>
+                                Хамам
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="fourth">
+                            <p>
+                                Финская сауна
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Соляная сауна
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Галокамера
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Бассейн
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Чаша
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Купель
+                            </p>
+                        </label>
+                    </div>
+                    <label class="checkbox last-checkbox">
+                        <input type="checkbox" class="custom-checkbox">
+                        <p>
+                            Я согласен на
+                            <a href="#">обработку персональных данных</a>
+                        </p>
+                    </label>
+                    <button type="submit" class="btn btn-sumbit">отправить</button>
                 </form>
             </div>
         </div>

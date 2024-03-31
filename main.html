@@ -7,9 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Главная</title>
 </head>
@@ -19,7 +23,7 @@
             <header class="header">
     <div class="container">
         <div class="header__row">
-            <a href="index.html" class="header__logo">
+            <a href="index.html" class="header__logo fadeIn wow" data-wow-delay="1s">
                 <img src="img/svgicons/logo.svg" alt="logo">
             </a>
             <div class="header__burger">
@@ -27,11 +31,11 @@
             </div>
             <div class="header__menu">
                 <nav class="header__links">
-                    <a href="#">главная</a>
-                    <a href="#">о компании</a>
-                    <div class="dropdown-container">
+                    <a href="#" class="wow fadeInLeft">главная</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="100ms">о компании</a>
+                    <div class="dropdown-container wow fadeInLeft" data-wow-delay="200ms">
                         <div class="arrow"></div>
-                        <a href="#" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
+                        <a href="#" class="header__link dropdown-toggle">домашние spa</a>
                         <ul class="header-down__menu dropdown-menu">
                             <li class="header-down__link">
                                 <a href="#">русские бани</a>
@@ -53,7 +57,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="dropdown-container">
+                    <div class="dropdown-container wow fadeInLeft" data-wow-delay="300ms">
                         <div class="arrow"></div>
                         <a href="#" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
                         <ul class="header-down__menu dropdown-menu">
@@ -68,9 +72,9 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#">портфолио</a>
-                    <a href="#">блог</a>
-                    <a href="#">Контакты</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="400ms">портфолио</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="500ms">блог</a>
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="600ms">Контакты</a>
                 </nav>
             </div>
         </div>
@@ -93,18 +97,18 @@
                     </div>
                     <div class="container">
                         <div class="intro__row text-white">
-                            <h1>правильные бани</h1>
-                            <h2>
+                            <h1 class="wow fadeIn" data-wow-delay="1800ms">правильные бани</h1>
+                            <h2 class="wow fadeIn" data-wow-delay="1900ms">
                                 Создаем лучшие банные комплексы
                                 <br>
                                 для вашего истинного комфорта
                             </h2>
                             <div class="intro__btns btns">
-                                <button class="btn btn__bordered white">оставить заявку</button>
-                                <a href="#" class="btn btn__underlined white">
+                                <button class="btn btn__bordered white btn-callback wow fadeIn" data-wow-delay="2000ms">оставить заявку</button>
+                                <button class="btn btn__underlined white btn-price wow fadeIn" data-wow-delay="2000ms">
                                     рассчитать стоимость
                                     <img src="img/svgicons/quiz-arrow.svg" alt="quiz-arrow">
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -112,24 +116,24 @@
                 <section class="about section">
                     <div class="container">
                         <header class="block-header flex">
-                            <h2>о компании</h2>
-                            <p>
+                            <h2 class="wow fadeInDown">о компании</h2>
+                            <p class="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 Компания «Правильные бани» успешно работает 
                                     в сфере строительства c 2004 года и за это время успела прочно зарекомендовать себя 
                                     как надежный и стабильный партнер
                             </p>
-                            <p>
+                            <p class="wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1200ms">
                                 Основная деятельность компании – 
                                         строительство соляных комнат, бань, хамам, домашних SPA и Wellness центров 
                                         из премиальных материалов
                             </p>
                         </header>
                         <main class="about__content block-main">
-                            <aside class="about__text block-main__aside">
+                            <aside class="about__text block-main__aside wow fadeInDown">
                                 <p>Сегодня каждый человек может организовать сауну или турецкую баню у себя дома</p>
                                 <a href="#" class="btn btn__bordered green">оставить заявку</a>
                             </aside>
-                            <div class="about__img block-main__big">
+                            <div class="about__img block-main__big wow fadeInRight">
                                 <img src="img/index/about/content.png" alt="about-img">
                             </div>
                         </main>
@@ -138,15 +142,15 @@
                 <section class="why section">
                     <div class="container">
                         <header class="block-header flex">
-                            <h2>почему именно мы?</h2>
-                            <p>
+                            <h2 class="fadeInLeft wow">почему именно мы?</h2>
+                            <p class="fadeInRight wow">
                                 Создавая бани и сауны уже на протяжении многих лет, мы гордимся тем, что каждый клиент становится частью нашей успешной истории. Присоединяйтесь к нам и доверьте свои мечты надежным рукам профессионалов
                             </p>
                         </header>
                         <main class="why__content block-main">
                             <aside class="block-main__aside"></aside>
                             <div class="why__text block-main__big">
-                                <article class="why__advantage advantage-card">
+                                <article class="why__advantage advantage-card fadeInLeft wow">
                                     <header class="advantage-card__header">
                                         <p>
                                             <span>до</span>
@@ -160,7 +164,7 @@
                                         </h3>
                                     </main>
                                 </article>
-                                <article class="why__advantage advantage-card">
+                                <article class="why__advantage advantage-card fadeInLeft wow">
                                     <header class="advantage-card__header">
                                         <p>
                                             160+
@@ -172,7 +176,7 @@
                                         </h3>
                                     </main>
                                 </article>
-                                <article class="why__advantage advantage-card">
+                                <article class="why__advantage advantage-card fadeInLeft wow">
                                     <header class="advantage-card__header">
                                         <p>
                                             12
@@ -185,7 +189,7 @@
                                         </h3>
                                     </main>
                                 </article>
-                                <article class="why__advantage advantage-card">
+                                <article class="why__advantage advantage-card fadeInLeft wow">
                                     <header class="advantage-card__header">
                                         <p>
                                             20
@@ -205,22 +209,22 @@
                 <article class="spa article">
                     <div class="container">
                         <header class="block-header flex reverse between">
-                            <h2>Все что угодно</h2>
-                            <p>
+                            <h2 class="fadeInRight wow">Все что угодно</h2>
+                            <p class="fadeInLeft wow">
                                 и все только
                                 <br>
                                 для вашего комфорта
                             </p>
                         </header>
                         <main class="spa__row">
-                            <article class="spa__spa text-white">
-                                <h3>домашние spa</h3>
-                                <a href="#" class="btn btn__bordered white">смотреть каталог</a>
+                            <article class="spa__spa text-white fadeIn wow">
+                                <h3 class="fadeIn wow" data-wow-delay="900ms">домашние spa</h3>
+                                <a href="#" class="btn btn__bordered white fadeIn wow" data-wow-delay="1200ms">смотреть каталог</a>
                                 <img src="img/index/spa/1.png" alt="spa-image">
                             </article>
-                            <article class="spa__spa text-white">
-                                <h3>коммерческие spa</h3>
-                                <a href="#" class="btn btn__bordered white">смотреть каталог</a>
+                            <article class="spa__spa text-white fadeIn wow">
+                                <h3 class="fadeIn wow" data-wow-delay="900ms">коммерческие spa</h3>
+                                <a href="#" class="btn btn__bordered white fadeIn wow" data-wow-delay="1200ms">смотреть каталог</a>
                                 <img src="img/index/spa/2.png" alt="spa-image">
                             </article>
                         </main>
@@ -285,15 +289,15 @@
                         </header>
                         <main class="articles__row">
                             <article class="articles__article">
-                                <div class="articles__img">
+                                <div class="articles__img fadeIn wow" data-wow-delay="0ms">
                                     <img src="img/articles/1.png" alt="articles-img">
                                 </div>
-                                <h3>
+                                <h3 class="fadeIn wow" data-wow-delay="100ms">
                                     Посещение турецкой 
                                     бани хамам
                                 </h3>
-                                <p>Банные традиции или как правильно  ходить в хамам</p>
-                                <a href="#" class="btn btn__bordered green with-arrow">
+                                <p class="fadeIn wow" data-wow-delay="200ms">Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="300ms">
                                     оставить заявку
                                     <svg>
                                         <use xlink:href="#btnArrow"></use>
@@ -301,15 +305,15 @@
                                 </a>
                             </article>
                             <article class="articles__article">
-                                <div class="articles__img">
+                                <div class="articles__img fadeIn wow" data-wow-delay="100ms">
                                     <img src="img/articles/2.png" alt="articles-img">
                                 </div>
-                                <h3>
+                                <h3 class="fadeIn wow" data-wow-delay="200ms">
                                     Посещение турецкой 
                                     бани хамам
                                 </h3>
-                                <p>Банные традиции или как правильно  ходить в хамам</p>
-                                <a href="#" class="btn btn__bordered green with-arrow">
+                                <p class="fadeIn wow" data-wow-delay="300ms">Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="400ms">
                                     оставить заявку
                                     <svg>
                                         <use xlink:href="#btnArrow"></use>
@@ -317,15 +321,15 @@
                                 </a>
                             </article>
                             <article class="articles__article">
-                                <div class="articles__img">
+                                <div class="articles__img fadeIn wow" data-wow-delay="500ms">
                                     <img src="img/articles/1.png" alt="articles-img">
                                 </div>
-                                <h3>
+                                <h3 class="fadeIn wow" data-wow-delay="600ms">
                                     Посещение турецкой 
                                     бани хамам
                                 </h3>
-                                <p>Банные традиции или как правильно  ходить в хамам</p>
-                                <a href="#" class="btn btn__bordered green with-arrow">
+                                <p class="fadeIn wow" data-wow-delay="700ms">Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="800ms">
                                     оставить заявку
                                     <svg>
                                         <use xlink:href="#btnArrow"></use>
@@ -333,15 +337,15 @@
                                 </a>
                             </article>
                             <article class="articles__article">
-                                <div class="articles__img">
-                                    <img src="img/articles/3.png" alt="articles-img">
+                                <div class="articles__img fadeIn wow" data-wow-delay="900ms">
+                                    <img src="img/articles/1.png" alt="articles-img">
                                 </div>
-                                <h3>
+                                <h3 class="fadeIn wow" data-wow-delay="1000ms">
                                     Посещение турецкой 
                                     бани хамам
                                 </h3>
-                                <p>Банные традиции или как правильно  ходить в хамам</p>
-                                <a href="#" class="btn btn__bordered green with-arrow">
+                                <p class="fadeIn wow" data-wow-delay="110ms">Банные традиции или как правильно  ходить в хамам</p>
+                                <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="1200ms">
                                     оставить заявку
                                     <svg>
                                         <use xlink:href="#btnArrow"></use>
@@ -361,7 +365,7 @@
                                         Успейте приобрести товары и услуги на выгодных условиях
                                     </p>
                                 </header>
-                                <article class="special__item special-item">
+                                <article class="special__item special-item fadeInLeft wow" data-wow-delay="0ms">
                                     <div class="special-item__img">
                                         <img src="img/special/1.png" alt="special-item-img">
                                     </div>
@@ -379,7 +383,7 @@
                                         </a>
                                     </div>
                                 </article>
-                                <article class="special__item special-item">
+                                <article class="special__item special-item fadeInLeft wow" data-wow-delay="200ms">
                                     <div class="special-item__img">
                                         <img src="img/special/2.png" alt="special-item-img">
                                     </div>
@@ -398,7 +402,7 @@
                                     </div>
                                 </article>
                             </aside>
-                            <div class="block-main__big">
+                            <div class="block-main__big fadeIn wow" data-wow-delay="900ms">
                                 <img src="img/special/content.png" alt="special-img">
                             </div>
                         </main>
@@ -653,7 +657,7 @@
         <div class="dialogbox__window">
             <div class="dialogbox__close"></div>
             <div class="dialogbox__form">
-                <h2>Обратный звонок</h2>
+                <h2>Отправить заявку</h2>
                 <form action="#">
                     <input
                         class="input"
@@ -667,7 +671,160 @@
                         name="phone"
                         placeholder="Ваш телефон"
                     >
+                    <input
+                        class="input"
+                        type="email"
+                        name="email"
+                        placeholder="Ваш email"
+                    >
+                    <textarea name="comment" placeholder="ваше сообщение"></textarea>
                     <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialogbox dialogbox-price">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Рассчитать стоимость</h2>
+                <form action="#">
+                    <div class="dialogbox__user-info">
+                        <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            placeholder="Ваше имя"
+                        >
+                        <input
+                            class="input"
+                            type="tel"
+                            name="phone"
+                            placeholder="Ваш телефон"
+                        >
+                    </div>
+                    <p class="dialogbox__question">Для какого вида использования планируете строительство банного комплекса?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="first">
+                            <p>
+                                Индивидуальное использование
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="first">
+                            <p>
+                                Коммерческое использование
+                            </p>
+                        </label>
+                    </div>
+                    <p class="dialogbox__question">У Вас уже имеется готовое помещение под отделку?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="second">
+                            <p>
+                                да
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="second">
+                            <p>
+                                нет
+                            </p>
+                        </label>
+                    </div>
+                    <p class="dialogbox__question">Какую площадь Вы планируете выделить для комплекса?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                До 50м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                До 100м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                До 200м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" class="custom-checkbox" name="third">
+                            <p>
+                                Свыше 200м
+                                <sup>2</sup>
+                            </p>
+                        </label>
+                    </div>
+                    <p class="dialogbox__question">Какую площадь Вы планируете выделить для комплекса?</p>
+                    <div class="dialogbox__asnwer">
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="fourth">
+                            <p>
+                                Русская баня
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="fourth">
+                            <p>
+                                Хамам
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="fourth">
+                            <p>
+                                Финская сауна
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Соляная сауна
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Галокамера
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Бассейн
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Чаша
+                            </p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="third">
+                            <p>
+                                Купель
+                            </p>
+                        </label>
+                    </div>
+                    <label class="checkbox last-checkbox">
+                        <input type="checkbox" class="custom-checkbox">
+                        <p>
+                            Я согласен на
+                            <a href="#">обработку персональных данных</a>
+                        </p>
+                    </label>
+                    <button type="submit" class="btn btn-sumbit">отправить</button>
                 </form>
             </div>
         </div>
