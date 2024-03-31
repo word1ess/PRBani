@@ -1,0 +1,494 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Каталог спа</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="index.html" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav class="header__links">
+                    <a href="#">главная</a>
+                    <a href="#">о компании</a>
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
+                        <ul class="header-down__menu dropdown-menu">
+                            <li class="header-down__link">
+                                <a href="#">русские бани</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">соляные сауны</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">бассейны</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">чаны</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">купели</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">сервис и обслуживание</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
+                        <ul class="header-down__menu dropdown-menu">
+                            <li class="header-down__link">
+                                <a href="#">строительство банных комплексов</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">строительство соляных комплексов</a>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">бассейны</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">портфолио</a>
+                    <a href="#">блог</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="btnArrow" viewBox="0 0 14 14">
+        <g clip-path="url(#clip0_6_3)">
+            <rect x="6" width="9" height="1"/>
+            <rect x="13" width="1" height="9"/>
+            <path d="M13 1L0 14"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content">
+                <section class="section">
+                    <div class="container">
+                        <header class="block-header flex reverse between">
+                            <h1>финские сауны</h1>
+                            <p>
+                                домашние spa
+                            </p>
+                        </header>
+                        <main class="block-with-aside">
+                            <aside class="block-with-aside__aside block-with-slides one">
+                                <div class="block-with-slides__type">русские бани</div>
+                                <div class="block-with-slides__hidden">
+                                    <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                    <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                    <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                    <p data-tab="fin-decor">Финская сауна с декором</p>
+                                </div>
+                                <div class="block-with-slides__type">финские сауны</div>
+                                <div class="block-with-slides__hidden">
+                                    <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                    <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                    <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                    <p data-tab="fin-decor">Финская сауна с декором</p>
+                                </div>
+                                <div class="block-with-slides__type">соляные сауны</div>
+                                <div class="block-with-slides__hidden">
+                                    <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                    <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                    <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                    <p data-tab="fin-decor">Финская сауна с декором</p>
+                                </div>
+                                <div class="block-with-slides__type">чаны</div>
+                                <div class="block-with-slides__hidden">
+                                    <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                    <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                    <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                    <p data-tab="fin-decor">Финская сауна с декором</p>
+                                </div>
+                                <div class="block-with-slides__type">купели</div>
+                                <div class="block-with-slides__hidden">
+                                    <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                    <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                    <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                    <p data-tab="fin-decor">Финская сауна с декором</p>
+                                </div>
+                                <div class="block-with-slides__type">сервис и обслуживание</div>
+                                <div class="block-with-slides__hidden">
+                                    <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                    <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                    <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                    <p data-tab="fin-decor">Финская сауна с декором</p>
+                                </div>
+                            </aside>
+                            <div class="block-with-aside__content">
+                                <div data-block="fin-canada" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение Финской сауны из канадского кедра
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div data-block="fin-furnace" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            ФИНСКАЯ САУНА С ДРОВЯНОЙ ПЕЧЬЮ
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div data-block="fin-panel" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            ФИНСКАЯ САУНА С ПАНЕЛЬЮ
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div data-block="fin-decor" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            ФИНСКАЯ САУНА С ДЕКОРОМ
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <header class="footer__header">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/svgicons/logo.svg" alt="logo">
+                </a>
+            </header>
+            <main class="footer__links">
+                <nav class="footer__nav">
+                    <p class="footer__title">правильные бани</p>
+                    <a href="#">главная</a>
+                    <a href="#">о компании</a>
+                    <a href="#">портфолио</a>
+                    <a href="#">блог</a>
+                    <a href="#">контакты</a>
+                </nav>
+                <nav class="footer__nav">
+                    <p class="footer__title">домашние spa</p>
+                    <a href="#">русские бани</a>
+                    <a href="#">финские сауны</a>
+                    <a href="#">соляные сауны</a>
+                    <a href="#">бассейны</a>
+                    <a href="#">чаны</a>
+                    <a href="#">купели</a>
+                    <a href="#">сервис и обслуживание</a>
+                </nav>
+                <nav class="footer__nav ">
+                    <p class="footer__title">коммерческие spa</p>
+                    <a href="#">строительство банных комплексов</a>
+                    <a href="#">строительство соляных комплексов</a>
+                    <a href="#">бассейны</a>
+                </nav>
+                <nav class="footer__nav">
+                    <p class="footer__title">контакты</p>
+                    <p>
+                        г. Казань, ул. Баки Урманче д.6
+                    </p>
+                    <a href="tel:+7 (987) 226-58-08">+7 (987) 226-58-08</a>
+                    <a href="mailto:prbani@mail.ru">prbani@mail.ru</a>
+                    <div class="social">
+                        <a href="#">
+                            <img src="img/svgicons/youtube.svg" alt="youtube">
+                        </a>
+                        <a href="#">
+                            <img src="img/svgicons/insta.svg" alt="insta">
+                        </a>
+                    </div>
+                </nav>
+            </main>
+            <footer class="footer__copy">
+                <p>2024 ©  Правильные бани</p>
+                <p>Копирование материалов с сайта запрещено. Нарушение авторских прав влечет за собой ответственность, в соответствии со ст. 1301 ГК РФ.</p>
+            </footer>
+        </div>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-callback">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Обратный звонок</h2>
+                <form action="#">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+                    <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        placeholder="Ваш телефон"
+                    >
+                    <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
