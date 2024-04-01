@@ -1,0 +1,44 @@
+{
+    "title": "Бассейны",
+    "images":[{
+        "imageSrc": "./img/phhotogallery/1.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/2.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/3.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/3.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/3.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/4.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/1.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    },
+    {
+        "imageSrc": "./img/phhotogallery/8.png",
+        "imageTitle": "Бассейны",
+        "imageText": "Описание текст текст текст текст текст"
+    }
+]
+}
