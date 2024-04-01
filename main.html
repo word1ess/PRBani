@@ -46,52 +46,54 @@
                         </div>
                     </div>
                     <nav class="header__links">
-                        <a href="#" class="wow fadeInLeft">главная</a>
-                        <a href="#" class="wow fadeInLeft" data-wow-delay="100ms">о компании</a>
+                        <a href="main.html" class="wow fadeInLeft">главная</a>
+                        <a href="about.html" class="wow fadeInLeft" data-wow-delay="100ms">о компании</a>
                         <div class="dropdown-container wow fadeInLeft" data-wow-delay="200ms">
                             <div class="arrow"></div>
-                            <a href="#" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
+                            <a href="catalog.html" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
                             <ul class="header-down__menu dropdown-menu">
                                 <li class="header-down__link">
-                                    <a href="#">русские бани</a>
+                                    <a href="item.html">русские бани</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">соляные сауны</a>
+                                    <a href="item.html">соляные сауны</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">бассейны</a>
+                                    <a href="item.html">бассейны</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">чаны</a>
+                                    <a href="item.html">чаны</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">купели</a>
+                                    <a href="item.html">купели</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">сервис и обслуживание</a>
+                                    <a href="item.html">сервис и обслуживание</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="dropdown-container wow fadeInLeft" data-wow-delay="300ms">
                             <div class="arrow"></div>
-                            <a href="#" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
+                            <a href="catalog.html" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
                             <ul class="header-down__menu dropdown-menu">
                                 <li class="header-down__link">
-                                    <a href="#">строительство банных комплексов</a>
+                                    <a href="article.html">строительство банных комплексов</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">строительство соляных комплексов</a>
+                                    <a href="article.html">строительство соляных комплексов</a>
                                 </li>
                                 <li class="header-down__link">
-                                    <a href="#">бассейны</a>
+                                    <a href="article.html">бассейны</a>
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="wow fadeInLeft" data-wow-delay="400ms">портфолио</a>
-                        <a href="#" class="wow fadeInLeft" data-wow-delay="500ms">блог</a>
-                        <a href="#" class="wow fadeInLeft" data-wow-delay="600ms">Контакты</a>
+                        <a href="photogallery.html" class="wow fadeInLeft" data-wow-delay="400ms">портфолио</a>
+                        <a href="blog.html" class="wow fadeInLeft" data-wow-delay="500ms">блог</a>
+                        <a href="contacts.html" class="wow fadeInLeft" data-wow-delay="600ms">Контакты</a>
                     </nav>
-                    <div class="btn btn__bordered white header__btn">оставить заявку</div>
+                    <div class="btn btn__bordered white header__btn">
+                        <span>оставить заявку</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,8 +134,13 @@
                                 для вашего истинного комфорта
                             </h2>
                             <div class="intro__btns btns">
-                                <button class="btn btn__bordered white btn-callback wow fadeIn" data-wow-delay="2000ms">оставить заявку</button>
-                                <button class="btn btn__underlined white btn-price wow fadeIn" data-wow-delay="2000ms">
+                                <button class="btn btn__bordered white btn-callback wow fadeIn" data-wow-delay="2000ms">
+                                    <span>оставить заявку</span>
+                                </button>
+                                <button class="btn" data-wow-delay="2000ms">
+                                    <span>оставить заявку</span>
+                                </button>
+                                <button class="btn__underlined white btn-price wow fadeIn" data-wow-delay="2000ms">
                                     рассчитать стоимость
                                     <img src="img/svgicons/quiz-arrow.svg" alt="quiz-arrow">
                                 </button>
@@ -159,7 +166,9 @@
                         <main class="about__content block-main">
                             <aside class="about__text block-main__aside wow fadeInDown">
                                 <p>Сегодня каждый человек может организовать сауну или турецкую баню у себя дома</p>
-                                <a href="#" class="btn btn__bordered green">оставить заявку</a>
+                                <a href="#" class="btn btn__bordered green">
+                                    <span>оставить заявку</span>
+                                </a>
                             </aside>
                             <div class="about__img block-main__big wow fadeInRight">
                                 <img src="img/index/about/content.png" alt="about-img">
@@ -246,14 +255,30 @@
                         </header>
                         <main class="spa__row">
                             <article class="spa__spa text-white fadeIn wow">
-                                <h3 class="fadeIn wow" data-wow-delay="900ms">домашние spa</h3>
-                                <a href="#" class="btn btn__bordered white fadeIn wow" data-wow-delay="1200ms">смотреть каталог</a>
-                                <img src="img/index/spa/1.png" alt="spa-image">
+                                <div class="spa__front">
+                                    <h3 class="fadeIn wow" data-wow-delay="900ms">домашние spa</h3>
+                                    <a href="#" class="btn btn__bordered white fadeIn wow" data-wow-delay="1200ms">
+                                        <span>смотреть каталог</span>
+                                    </a>
+                                    <img src="img/index/spa/1.png" alt="spa-image">
+                                </div>
+                                <div class="spa__back">
+                                    <h2>Titlte</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus.</p>
+                                </div>
                             </article>
                             <article class="spa__spa text-white fadeIn wow">
-                                <h3 class="fadeIn wow" data-wow-delay="900ms">коммерческие spa</h3>
-                                <a href="#" class="btn btn__bordered white fadeIn wow" data-wow-delay="1200ms">смотреть каталог</a>
-                                <img src="img/index/spa/2.png" alt="spa-image">
+                                <div class="spa__front">
+                                    <h3 class="fadeIn wow" data-wow-delay="900ms">домашние spa</h3>
+                                    <a href="#" class="btn btn__bordered white fadeIn wow" data-wow-delay="1200ms">
+                                        <span>смотреть каталог</span>
+                                    </a>
+                                    <img src="img/index/spa/2.png" alt="spa-image">
+                                </div>
+                                <div class="spa__back">
+                                    <h2>Titlte</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus.</p>
+                                </div>
                             </article>
                         </main>
                     </div>
@@ -326,10 +351,12 @@
                                 </h3>
                                 <p class="fadeIn wow" data-wow-delay="200ms">Банные традиции или как правильно  ходить в хамам</p>
                                 <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="300ms">
-                                    оставить заявку
-                                    <svg>
-                                        <use xlink:href="#btnArrow"></use>
-                                    </svg>
+                                    <span>
+                                        оставить заявку
+                                        <svg>
+                                            <use xlink:href="#btnArrow"></use>
+                                        </svg>
+                                    </span>
                                 </a>
                             </article>
                             <article class="articles__article">
@@ -342,10 +369,12 @@
                                 </h3>
                                 <p class="fadeIn wow" data-wow-delay="300ms">Банные традиции или как правильно  ходить в хамам</p>
                                 <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="400ms">
-                                    оставить заявку
-                                    <svg>
-                                        <use xlink:href="#btnArrow"></use>
-                                    </svg>
+                                    <span>
+                                        оставить заявку
+                                        <svg>
+                                            <use xlink:href="#btnArrow"></use>
+                                        </svg>
+                                    </span>
                                 </a>
                             </article>
                             <article class="articles__article">
@@ -358,10 +387,12 @@
                                 </h3>
                                 <p class="fadeIn wow" data-wow-delay="700ms">Банные традиции или как правильно  ходить в хамам</p>
                                 <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="800ms">
-                                    оставить заявку
-                                    <svg>
-                                        <use xlink:href="#btnArrow"></use>
-                                    </svg>
+                                    <span>
+                                        оставить заявку
+                                        <svg>
+                                            <use xlink:href="#btnArrow"></use>
+                                        </svg>
+                                    </span>
                                 </a>
                             </article>
                             <article class="articles__article">
@@ -374,10 +405,12 @@
                                 </h3>
                                 <p class="fadeIn wow" data-wow-delay="110ms">Банные традиции или как правильно  ходить в хамам</p>
                                 <a href="#" class="btn btn__bordered green with-arrow fadeIn wow" data-wow-delay="1200ms">
-                                    оставить заявку
-                                    <svg>
-                                        <use xlink:href="#btnArrow"></use>
-                                    </svg>
+                                    <span>
+                                        оставить заявку
+                                        <svg>
+                                            <use xlink:href="#btnArrow"></use>
+                                        </svg>
+                                    </span>
                                 </a>
                             </article>
                         </main>
@@ -404,10 +437,12 @@
                                             в подарок
                                         </p>
                                         <a href="#" class="btn btn__bordered green with-arrow">
-                                            узнать больше
-                                            <svg>
-                                                <use xlink:href="#btnArrow"></use>
-                                            </svg>
+                                            <span>
+                                                Узнать больше
+                                                <svg>
+                                                    <use xlink:href="#btnArrow"></use>
+                                                </svg>
+                                            </span>
                                         </a>
                                     </div>
                                 </article>
@@ -422,10 +457,12 @@
                                             в подарок
                                         </p>
                                         <a href="#" class="btn btn__bordered green with-arrow">
-                                            узнать больше
-                                            <svg>
-                                                <use xlink:href="#btnArrow"></use>
-                                            </svg>
+                                            <span>
+                                                Узнать больше
+                                                <svg>
+                                                    <use xlink:href="#btnArrow"></use>
+                                                </svg>
+                                            </span>
                                         </a>
                                     </div>
                                 </article>
@@ -460,7 +497,9 @@
                                         <a href="#">обработку персональных данных</a>
                                     </p>
                                 </label>
-                                <button class="btn" type="submit">отправить</button>
+                                <button class="btn" type="submit">
+                                    <span>Отправить</span>
+                                </button>
                             </form>
                         </main>
                     </div>
@@ -614,7 +653,9 @@
                                         <a href="#">обработку персональных данных</a>
                                     </p>
                                 </label>
-                                <button class="btn" type="submit">отправить</button>
+                                <button class="btn" type="submit">
+                                    <span>отправить</span>
+                                </button>
                             </form>
                         </main>
                     </div>
