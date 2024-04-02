@@ -3944,6 +3944,9 @@ p.white {
   transition: all 300ms ease;
   min-height: 370px;
 }
+.dialogbox__test:last-child {
+  min-height: fit-content;
+}
 .dialogbox__test.active {
   display: block;
   z-index: 10;
@@ -4145,43 +4148,37 @@ p.white {
 .photogallery__row:not(:last-child) {
   margin-bottom: 80px;
 }
-.photogallery__front, .photogallery__back {
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform 0.6s linear;
+.photogallery__text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.photogallery__front {
-  transform: perspective(600px) rotateY(0deg);
-}
-.photogallery__front img {
-  object-fit: cover;
+  opacity: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0px;
+  left: 0px;
+  background: hsla(0, 0%, 0%, 0.8);
+  transition: all 300ms ease;
 }
-.photogallery__back {
-  transform: perspective(600px) rotateY(180deg);
-  background-color: #000000;
+.photogallery__image {
+  cursor: pointer;
+  position: relative;
 }
-.photogallery__back h2, .photogallery__back p {
+.photogallery__image h2, .photogallery__image p {
   position: relative;
   z-index: 3;
   color: #fff !important;
   text-align: center;
 }
-.photogallery__image {
-  position: relative;
+.photogallery__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.photogallery__image:hover .photogallery__front {
-  transform: perspective(600px) rotateY(-180deg);
-}
-.photogallery__image:hover .photogallery__back {
-  transform: perspective(600px) rotateY(0deg);
+.photogallery__image:hover .photogallery__text {
+  opacity: 1;
 }
 .photogallery__image {
   display: block;
@@ -4339,6 +4336,13 @@ p.white {
   background: #6b7537 !important;
 }
 
+.quiz__last {
+  display: none;
+}
+.quiz__last.active {
+  display: block;
+}
+
 .intro {
   position: relative;
   height: 100vh;
@@ -4405,26 +4409,19 @@ p.white {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 8px;
 }
-.spa__front, .spa__back {
-  top: 60px;
-  bottom: 60px;
-  width: 100%;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform 0.6s linear;
+.spa__spa {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  position: relative;
+  aspect-ratio: 1/1;
 }
-.spa__front {
-  transform: perspective(600px) rotateY(0deg);
-}
-.spa__front h3, .spa__front p, .spa__front a {
+.spa__spa h3, .spa__spa p, .spa__spa a {
   position: relative;
   z-index: 3;
 }
-.spa__front img {
+.spa__spa img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -4433,7 +4430,7 @@ p.white {
   left: 0px;
   z-index: 1;
 }
-.spa__front::before {
+.spa__spa::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4443,20 +4440,6 @@ p.white {
   z-index: 2;
   background: rgba(0, 0, 0, 0.4);
   z-index: 2;
-}
-.spa__back {
-  transform: perspective(600px) rotateY(180deg);
-  background-color: #000000;
-}
-.spa__spa {
-  position: relative;
-  aspect-ratio: 1/1;
-}
-.spa__spa:hover .spa__front {
-  transform: perspective(600px) rotateY(-180deg);
-}
-.spa__spa:hover .spa__back {
-  transform: perspective(600px) rotateY(0deg);
 }
 
 .our-works__swiper {
@@ -4803,6 +4786,9 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
+  .dialogbox__window {
+    max-height: 90%;
+  }
   .intro h1 {
     font-size: 60px;
   }

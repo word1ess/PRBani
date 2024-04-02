@@ -305,20 +305,6 @@
             <div class="dialogbox__form">
                 <h2>Рассчитать стоимость</h2>
                 <form action="#">
-                    <div class="dialogbox__user-info">
-                        <input
-                            class="input"
-                            type="text"
-                            name="name"
-                            placeholder="Ваше имя"
-                        >
-                        <input
-                            class="input"
-                            type="tel"
-                            name="phone"
-                            placeholder="Ваш телефон"
-                        >
-                    </div>
                     <div class="dialogbox__qiuz">
                         <div class="dialogbox__test">
                             <p class="dialogbox__question">Для какого вида использования планируете строительство банного комплекса?</p>
@@ -387,7 +373,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="dialogbox__test">
+                        <div class="dialogbox__test with-btn">
                             <p class="dialogbox__question">Уточните, какое наполнение комплекса Вам хотелось бы воплотить? (выбрать несколько вариантов)</p>
                             <div class="dialogbox__asnwer">
                                 <label class="checkbox">
@@ -439,16 +425,41 @@
                                     </p>
                                 </label>
                             </div>
+                            <div class="btn quiz-next">
+                                Перейти к оформлению
+                            </div>
+                        </div>
+                        <div class="dialogbox__test">
+                            <input
+                                class="input"
+                                type="text"
+                                name="name"
+                                placeholder="Ваше имя"
+                            >
+                            <input
+                                class="input"
+                                type="tel"
+                                name="phone"
+                                placeholder="Ваш телефон"
+                            >
+                            <input
+                                class="input"
+                                type="email"
+                                name="email"
+                                placeholder="Ваш email"
+                            >
                         </div>
                     </div>
-                    <label class="checkbox last-checkbox">
-                        <input type="checkbox" class="custom-checkbox">
-                        <p>
-                            Я согласен на
-                            <a href="#">обработку персональных данных</a>
-                        </p>
-                    </label>
-                    <button type="submit" class="btn btn-sumbit">отправить</button>
+                    <footer class="dialogbox__footer quiz__last">
+                        <label class="checkbox last-checkbox">
+                            <input type="checkbox" class="custom-checkbox">
+                            <p>
+                                Я согласен на
+                                <a href="#">обработку персональных данных</a>
+                            </p>
+                        </label>
+                        <button type="submit" class="btn btn-sumbit">отправить</button>
+                    </footer>
                 </form>
             </div>
         </div>
