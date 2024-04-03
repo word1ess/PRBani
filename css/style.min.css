@@ -3851,6 +3851,10 @@ p.white {
 }
 .advantage-card__header p {
   font-size: 80px;
+  color: #77833d;
+}
+.advantage-card__header p span {
+  color: #0b0504;
 }
 .advantage-card__header span {
   font-size: 24px;
@@ -4249,6 +4253,19 @@ p.white {
   text-transform: uppercase;
 }
 
+.social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.social a {
+  margin: 0px !important;
+  height: fit-content;
+}
+.social.mobile {
+  display: none;
+}
+
 *::-webkit-scrollbar {
   width: 6px; /* ширина scrollbar */
 }
@@ -4283,6 +4300,29 @@ p.white {
   width: 32px;
   height: 32px;
 }
+.fixed-btns__row {
+  transform: translate(0px, 80px);
+  transition: all 300ms ease;
+  position: relative;
+  z-index: 10;
+}
+.fixed-btns__row.active {
+  transform: translate(0px, 0px);
+}
+.fixed-btns__social {
+  opacity: 0;
+  transition: all 300ms ease;
+  display: none;
+}
+.fixed-btns__social.active {
+  animation: fadeInDisplayFlex 1s linear;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 1;
+  z-index: 10;
+  margin-bottom: 16px;
+}
 
 .pulse {
   position: relative;
@@ -4293,11 +4333,11 @@ p.white {
   content: "";
   position: absolute;
   border: 2px solid #6b7537;
-  left: -20px;
+  left: -40px;
   opacity: 0;
-  right: -20px;
-  top: -20px;
-  bottom: -20px;
+  right: -40px;
+  top: -40px;
+  bottom: -40px;
   border-radius: 50%;
   animation: pulse 2.5s linear infinite;
 }
@@ -4315,8 +4355,22 @@ p.white {
     opacity: 1;
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(0.7);
     opacity: 0;
+  }
+}
+@keyframes fadeInDisplayFlex {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    gap: 16px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .btn-scroll {
@@ -4334,6 +4388,12 @@ p.white {
 
 .btn-watsapp {
   background: #6b7537 !important;
+  position: relative;
+  z-index: 10;
+}
+.btn-watsapp img {
+  position: relative;
+  z-index: 10;
 }
 
 .quiz__last {
@@ -4346,6 +4406,7 @@ p.white {
 .intro {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 .intro__bg {
   position: fixed;
@@ -4354,6 +4415,9 @@ p.white {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+.intro__bg.active {
+  opacity: 0;
 }
 .intro__bg img {
   position: absolute;
@@ -4483,14 +4547,11 @@ p.white {
   z-index: 1;
 }
 .our-works__prev, .our-works__next {
-  bottom: 7%;
-  top: auto;
-  left: 70%;
-  right: auto;
-  transform: translate(-50%, 0%);
+  left: 12%;
 }
 .our-works__next {
-  left: 76%;
+  left: auto;
+  right: 12%;
 }
 
 .articles__row {
@@ -4620,6 +4681,11 @@ p.white {
 .partners__item {
   padding: 30px 60px;
   border: 1px solid rgba(11, 5, 4, 0.4);
+  transition: all 300ms ease;
+}
+.partners__item:hover {
+  scale: 1.1;
+  border-color: #6b7537;
 }
 .partners__item p {
   text-align: center;
@@ -4668,7 +4734,7 @@ p.white {
 .footer {
   position: relative;
   z-index: 2;
-  background: #0b0504;
+  background: rgba(0, 0, 0, 0.4);
   padding: 59px 0px 70px;
 }
 .footer__header {
@@ -4717,23 +4783,26 @@ p.white {
   margin-bottom: 24px;
 }
 .footer__nav a, .footer__nav p {
-  color: #fefafa;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.4;
 }
 .footer__title {
   font-size: 20px !important;
-  color: hwb(0 96% 4%/0.6) !important;
+  color: #ffffff !important;
   margin: 0px 0px 40px;
   text-transform: uppercase;
   line-height: 1 !important;
 }
+.footer__title::after, .footer__title::before {
+  display: none;
+}
 .footer__copy p:first-child {
-  color: hwb(0 96% 4%/0.6);
+  color: #fff;
 }
 .footer__copy p:last-child {
-  color: hwb(0 96% 4%/0.3);
+  color: #fff;
 }
 
 body {
@@ -4786,6 +4855,9 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
+  .our-works__prev, .our-works__next {
+    transform: translate(0px, 40px);
+  }
   .dialogbox__window {
     max-height: 90%;
   }
@@ -4839,6 +4911,16 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
+  .social {
+    display: none;
+  }
+  .social.mobile {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .footer__title::after, .footer__title::before {
+    display: block;
+  }
   .dropdown-container {
     display: flex;
     gap: 15px;
