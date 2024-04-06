@@ -3776,6 +3776,16 @@ p.white {
 .block-header h2 {
   max-width: 400px;
   width: 100%;
+  position: relative;
+}
+.block-header h2::after {
+  content: "";
+  width: 160px;
+  height: 8px;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  background: #77833d;
 }
 .block-header h1 {
   font-size: 52px;
@@ -4928,6 +4938,13 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
+  .block-header h2 {
+    margin-bottom: 20px;
+  }
+  .block-header h2::after {
+    width: 100px;
+    height: 4px;
+  }
   .social {
     display: none;
   }
@@ -5145,7 +5162,6 @@ body {
   .block-header.flex h2, .block-header h2 {
     margin-right: 0px;
     max-width: 100%;
-    margin-bottom: 0px;
   }
   .block-header.reverse {
     flex-direction: column;
