@@ -1,0 +1,787 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Каталог спа</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__top">
+                <p>г. Казань, ул. Баки Урманче д.6</p>
+                <div class="flex">
+                    <a href="mailto:prbani@mail.ru">prbani@mail.ru</a>
+                    <a href="tel:+7 (987) 226-58-08">+7 (987) 226-58-08</a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <a href="index.html" class="header__logo fadeIn wow" data-wow-delay="1s">
+                    <img src="img/svgicons/logo.svg" alt="logo">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__menu">
+                    <div class="header__top mobile">
+                        <p>г. Казань, ул. Баки Урманче д.6</p>
+                        <div>
+                            <a href="mailto:prbani@mail.ru">prbani@mail.ru</a>
+                            <a href="tel:+7 (987) 226-58-08">+7 (987) 226-58-08</a>
+                        </div>
+                    </div>
+                    <nav class="header__links">
+                        <a href="main.html" class="wow fadeInLeft">главная</a>
+                        <a href="about.html" class="wow fadeInLeft" data-wow-delay="100ms">о компании</a>
+                        <div class="dropdown-container wow fadeInLeft" data-wow-delay="200ms">
+                            <div class="arrow"></div>
+                            <a href="catalog.html" class="header__link dropdown-toggle hover-dropdown">домашние spa</a>
+                            <ul class="header-down__menu dropdown-menu">
+                                <li class="header-down__link">
+                                    <a href="item.html">русские бани</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="item.html">соляные сауны</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="item.html">бассейны</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="item.html">чаны</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="item.html">купели</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="item.html">сервис и обслуживание</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-container wow fadeInLeft" data-wow-delay="300ms">
+                            <div class="arrow"></div>
+                            <a href="catalog.html" class="header__link dropdown-toggle hover-dropdown">коммерческие spa</a>
+                            <ul class="header-down__menu dropdown-menu">
+                                <li class="header-down__link">
+                                    <a href="article.html">строительство банных комплексов</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="article.html">строительство соляных комплексов</a>
+                                </li>
+                                <li class="header-down__link">
+                                    <a href="article.html">бассейны</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="photogallery.html" class="wow fadeInLeft" data-wow-delay="400ms">портфолио</a>
+                        <a href="blog.html" class="wow fadeInLeft" data-wow-delay="500ms">блог</a>
+                        <a href="contacts.html" class="wow fadeInLeft" data-wow-delay="600ms">Контакты</a>
+                    </nav>
+                    <div class="btn btn__bordered white header__btn">
+                        <span>оставить заявку</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="fixed-btns">
+    <div class="fixed-btns__row">
+        <div class="fixed-btns__social">
+            <a href="#">
+                <img src="img/svgicons/youtube.svg" alt="youtube">
+            </a>
+            <a href="#">
+                <img src="img/svgicons/insta.svg" alt="insta">
+            </a>
+            <a href="#">
+                <img src="img/svgicons/tg.svg" alt="tg">
+            </a>
+            <a href="#">
+                <img src="img/svgicons/watsapp-small.svg" alt="watsapp">
+            </a>
+            <a href="#">
+                <img src="img/svgicons/vk.svg" alt="vk">
+            </a>
+        </div>
+        <div class="pulse">
+            <button class="btn-watsapp">
+                <img src="img/svgicons/socials.svg" alt="socials">
+            </button>
+        </div>
+    </div>
+    <button href="#" class="btn-scroll">
+        <img src="img/svgicons/swiper-arrow-white.svg" alt="scroll-to-top">
+    </button>
+</div>
+<svg display="none">
+    <symbol id="btnArrow" viewBox="0 0 14 14">
+        <g clip-path="url(#clip0_6_3)">
+            <rect x="6" width="9" height="1"/>
+            <rect x="13" width="1" height="9"/>
+            <path d="M13 1L0 14"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content">
+                <section class="section">
+                    <div class="container">
+                        <header class="block-header flex reverse between">
+                            <h1>финские сауны</h1>
+                            <p>
+                                домашние spa
+                            </p>
+                        </header>
+                        <main class="block-with-aside">
+                            <aside class="block-with-aside__aside">
+                                <div class="aside__filter">
+                                    Фильтр
+                                </div>
+                                <div class="aside__row block-with-slides one">
+                                    <div class="block-with-slides__type">русские бани</div>
+                                    <div class="block-with-slides__hidden">
+                                        <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                        <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                        <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                        <p data-tab="fin-decor">Финская сауна с декором</p>
+                                    </div>
+                                    <div class="block-with-slides__type">финские сауны</div>
+                                    <div class="block-with-slides__hidden">
+                                        <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                        <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                        <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                        <p data-tab="fin-decor">Финская сауна с декором</p>
+                                    </div>
+                                    <div class="block-with-slides__type">соляные сауны</div>
+                                    <div class="block-with-slides__hidden">
+                                        <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                        <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                        <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                        <p data-tab="fin-decor">Финская сауна с декором</p>
+                                    </div>
+                                    <div class="block-with-slides__type">чаны</div>
+                                    <div class="block-with-slides__hidden">
+                                        <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                        <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                        <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                        <p data-tab="fin-decor">Финская сауна с декором</p>
+                                    </div>
+                                    <div class="block-with-slides__type">купели</div>
+                                    <div class="block-with-slides__hidden">
+                                        <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                        <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                        <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                        <p data-tab="fin-decor">Финская сауна с декором</p>
+                                    </div>
+                                    <div class="block-with-slides__type">сервис и обслуживание</div>
+                                    <div class="block-with-slides__hidden">
+                                        <p data-tab="fin-canada">Финская сауна из канадского кедра</p>
+                                        <p data-tab="fin-furnace">Финская сауна с дровяной печью</p>
+                                        <p data-tab="fin-panel">Финская сауна с панелью</p>
+                                        <p data-tab="fin-decor">Финская сауна с декором</p>
+                                    </div>
+                                </div>
+                            </aside>
+                            <div class="block-with-aside__content">
+                                <div data-block="fin-canada" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение Финской сауны из канадского кедра
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div data-block="fin-furnace" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            ФИНСКАЯ САУНА С ДРОВЯНОЙ ПЕЧЬЮ
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div data-block="fin-panel" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            ФИНСКАЯ САУНА С ПАНЕЛЬЮ
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div data-block="fin-decor" class="articles__row">
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            ФИНСКАЯ САУНА С ДЕКОРОМ
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/2.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/1.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <article class="articles__article">
+                                        <div class="articles__img">
+                                            <img src="img/articles/3.png" alt="articles-img">
+                                        </div>
+                                        <h3>
+                                            Посещение турецкой 
+                                            бани хамам
+                                        </h3>
+                                        <p>Банные традиции или как правильно  ходить в хамам</p>
+                                        <a href="#" class="btn btn__bordered green with-arrow">
+                                            оставить заявку
+                                            <svg>
+                                                <use xlink:href="#btnArrow"></use>
+                                            </svg>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <article class="form article">
+                    <div class="container">
+                        <main class="form__row block-main block-main__second">
+                            <header class="block-header block-main__aside">
+                                <h2>
+                                    Еще 
+                                    остались вопросы?
+                                </h2>
+                                <p>
+                                    Если у вас остались вопросы, заполните форму и наши специалисты в ближайшее время свяжутся с вами
+                                </p>
+                            </header>
+                            <form action="#" class="form__form block-main__big">
+                                <input type="text" name="name" placeholder="ваше имя">
+                                <input type="tel" name="phone" placeholder="ваш телефон">
+                                <input type="email" name="email" placeholder="ваш email">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <p>
+                                        Я согласен на
+                                        <a href="#">обработку персональных данных</a>
+                                    </p>
+                                </label>
+                                <button class="btn" type="submit">отправить</button>
+                            </form>
+                        </main>
+                    </div>
+                </article>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <header class="footer__header">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/svgicons/logo.svg" alt="logo">
+                </a>
+            </header>
+            <main class="footer__links">
+                <nav class="footer__nav">
+                    <p class="footer__title block-with-slides__type">правильные бани</p>
+                    <div class="block-with-slides__hidden">
+                        <a href="#">главная</a>
+                        <a href="#">о компании</a>
+                        <a href="#">портфолио</a>
+                        <a href="#">блог</a>
+                        <a href="#">контакты</a>
+                    </div>
+                </nav>
+                <nav class="footer__nav">
+                    <p class="footer__title block-with-slides__type">домашние spa</p>
+                    <div class="block-with-slides__hidden">
+                        <a href="#">русские бани</a>
+                        <a href="#">финские сауны</a>
+                        <a href="#">соляные сауны</a>
+                        <a href="#">бассейны</a>
+                        <a href="#">чаны</a>
+                        <a href="#">купели</a>
+                        <a href="#">сервис и обслуживание</a>
+                    </div>
+                </nav>
+                <nav class="footer__nav ">
+                    <p class="footer__title block-with-slides__type">коммерческие spa</p>
+                    <div class="block-with-slides__hidden">
+                        <a href="#">строительство банных комплексов</a>
+                        <a href="#">строительство соляных комплексов</a>
+                        <a href="#">бассейны</a>
+                    </div>
+                </nav>
+                <nav class="footer__nav">
+                    <p class="footer__title block-with-slides__type">контакты</p>
+                    <div class="block-with-slides__hidden">
+                        <p>
+                            г. Казань, ул. Баки Урманче д.6
+                            <a href="tel:+7 (987) 226-58-08">+7 (987) 226-58-08</a>
+                            <a href="mailto:prbani@mail.ru">prbani@mail.ru</a>
+                            <div class="social">
+                                <a href="#">
+                                    <img src="img/svgicons/youtube.svg" alt="youtube">
+                                </a>
+                                <a href="#">
+                                    <img src="img/svgicons/insta.svg" alt="insta">
+                                </a>
+                                <a href="#">
+                                    <img src="img/svgicons/tg.svg" alt="tg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/svgicons/watsapp-small.svg" alt="watsapp">
+                                </a>
+                                <a href="#">
+                                    <img src="img/svgicons/vk.svg" alt="vk">
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                </nav>
+                <div class="social mobile">
+                    <a href="#">
+                        <img src="img/svgicons/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/insta.svg" alt="insta">
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/tg.svg" alt="tg">
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/watsapp-small.svg" alt="watsapp">
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/vk.svg" alt="vk">
+                    </a>
+                </div>
+            </main>
+            <footer class="footer__copy">
+                <p>2024 ©  Правильные бани</p>
+                <p>Копирование материалов с сайта запрещено. Нарушение авторских прав влечет за собой ответственность, в соответствии со ст. 1301 ГК РФ.</p>
+            </footer>
+        </div>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-callback">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Отправить заявку</h2>
+                <form action="#">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+                    <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        placeholder="Ваш телефон"
+                    >
+                    <input
+                        class="input"
+                        type="email"
+                        name="email"
+                        placeholder="Ваш email"
+                    >
+                    <textarea name="comment" placeholder="ваше сообщение"></textarea>
+                    <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialogbox dialogbox-price">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Рассчитать стоимость</h2>
+                <form action="#">
+                    <div class="dialogbox__qiuz">
+                        <div class="dialogbox__test">
+                            <p class="dialogbox__question">Для какого вида использования планируете строительство банного комплекса?</p>
+                            <div class="dialogbox__asnwer">
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="first">
+                                    <p>
+                                        Индивидуальное использование
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="first">
+                                    <p>
+                                        Коммерческое использование
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dialogbox__test">
+                            <p class="dialogbox__question">У Вас уже имеется готовое помещение под отделку?</p>
+                            <div class="dialogbox__asnwer">
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="second">
+                                    <p>
+                                        да
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="second">
+                                    <p>
+                                        нет
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dialogbox__test">
+                            <p class="dialogbox__question">Какую площадь Вы планируете выделить для комплекса?</p>
+                            <div class="dialogbox__asnwer">
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="third">
+                                    <p>
+                                        До 50м
+                                        <sup>2</sup>
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="third">
+                                    <p>
+                                        До 100м
+                                        <sup>2</sup>
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="third">
+                                    <p>
+                                        До 200м
+                                        <sup>2</sup>
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="radio" class="custom-checkbox" name="third">
+                                    <p>
+                                        Свыше 200м
+                                        <sup>2</sup>
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dialogbox__test with-btn">
+                            <p class="dialogbox__question">Уточните, какое наполнение комплекса Вам хотелось бы воплотить? (выбрать несколько вариантов)</p>
+                            <div class="dialogbox__asnwer">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="fourth">
+                                    <p>
+                                        Русская баня
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="fourth">
+                                    <p>
+                                        Хамам
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="fourth">
+                                    <p>
+                                        Финская сауна
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="third">
+                                    <p>
+                                        Соляная сауна
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="third">
+                                    <p>
+                                        Галокамера
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="third">
+                                    <p>
+                                        Бассейн
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="third">
+                                    <p>
+                                        Чаша
+                                    </p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox" name="third">
+                                    <p>
+                                        Купель
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="btn quiz-next">
+                                Перейти к оформлению
+                            </div>
+                        </div>
+                        <div class="dialogbox__test">
+                            <input
+                                class="input"
+                                type="text"
+                                name="name"
+                                placeholder="Ваше имя"
+                            >
+                            <input
+                                class="input"
+                                type="tel"
+                                name="phone"
+                                placeholder="Ваш телефон"
+                            >
+                            <input
+                                class="input"
+                                type="email"
+                                name="email"
+                                placeholder="Ваш email"
+                            >
+                        </div>
+                    </div>
+                    <footer class="dialogbox__footer quiz__last">
+                        <label class="checkbox last-checkbox">
+                            <input type="checkbox" class="custom-checkbox">
+                            <p>
+                                Я согласен на
+                                <a href="#">обработку персональных данных</a>
+                            </p>
+                        </label>
+                        <button type="submit" class="btn btn-sumbit">отправить</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
