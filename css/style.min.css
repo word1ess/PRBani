@@ -3777,6 +3777,7 @@ p.white {
   max-width: 400px;
   width: 100%;
   position: relative;
+  margin-bottom: 40px;
 }
 .block-header h2::after {
   content: "";
@@ -3798,6 +3799,7 @@ p.white {
 }
 .block-header.flex h2 {
   margin-right: 40px;
+  margin-bottom: 0px;
 }
 .block-header.reverse {
   flex-direction: row-reverse;
@@ -4939,7 +4941,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .block-header h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
   .block-header h2::after {
     width: 100px;
