@@ -3669,10 +3669,6 @@ textarea {
   fill: #fff;
   stroke: #fff;
 }
-.btn.with-arrow.green svg, .btn.with-arrow.green svg * {
-  fill: #6b7537;
-  stroke: #6b7537;
-}
 .btn__back {
   margin-top: 80px;
 }
@@ -3700,6 +3696,11 @@ textarea {
 .btn.green {
   border-color: #6b7537;
 }
+.btn.green svg, .btn.green svg * {
+  color: #fff;
+  fill: #fff;
+  stroke: #fff;
+}
 .btn:after, .btn:before {
   width: 0%;
   height: 0%;
@@ -3712,7 +3713,7 @@ textarea {
   background-color: rgb(255, 255, 255);
 }
 .btn.green:after {
-  background: #6b7537;
+  background: #859244;
 }
 .btn:before {
   transition: all 0.5s ease-out;
@@ -4280,6 +4281,7 @@ p.white {
   top: 0px;
   left: 0px;
   object-fit: contain;
+  opacity: 0.7;
 }
 
 .social {
@@ -4485,6 +4487,23 @@ p.white {
 .about__text p {
   margin: 0px 0px 40px;
 }
+.about__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+}
+.about__img::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
 
 .why__text {
   display: grid;
@@ -4557,6 +4576,7 @@ p.white {
 .our-works__swiper .swiper-slide.swiper-slide-active .our-works__img {
   aspect-ratio: 8/4.4;
   height: auto;
+  position: relative;
 }
 .our-works__img {
   position: relative;
@@ -4574,6 +4594,16 @@ p.white {
   top: 0px;
   left: 0px;
   z-index: 1;
+}
+.our-works__img::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
 .our-works__prev, .our-works__next {
   left: 12%;
@@ -4627,9 +4657,29 @@ p.white {
   left: 0px;
   z-index: 1;
 }
+.articles__img::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
 
 .special__content {
   align-items: stretch;
+}
+.special__content .block-main__big::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
 .special__item {
   display: flex;
@@ -4653,6 +4703,16 @@ p.white {
   top: 0px;
   left: 0px;
   z-index: 1;
+}
+.special-item__img::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
 .special-item__text {
   flex: 0 0 240px;
@@ -4679,6 +4739,7 @@ p.white {
   padding: 32px 40px;
   border: 1px solid rgba(11, 5, 4, 0.4);
   height: auto;
+  background: rgba(107, 117, 55, 0.2156862745);
 }
 .reviews__header {
   margin-bottom: 40px;
